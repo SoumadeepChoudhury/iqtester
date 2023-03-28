@@ -1,6 +1,6 @@
 package iqtester;
 
-/**
+/*
  * author : Soumadeep Choudhury
  * company : Ahens | An Initiative to Initial
  * name : IQ-Tester
@@ -42,10 +42,10 @@ public class App {
         try {
             for (int i = 0; i < 3; i++) {
                 System.out.print("\rLoading" + (i > 0 ? whiteSpaces : "") + "\rLoading");
-                Thread.sleep(1000);
+                Thread.sleep(500);
                 for (int j = 0; j < text.length(); j++) {
                     System.out.print(text.charAt(j));
-                    Thread.sleep(1000);
+                    Thread.sleep(500);
                 }
             }
         } catch (Exception e) {
@@ -64,7 +64,7 @@ public class App {
         int index = (int) (Math.random() * 100); // Gets the index for the element
         int placement_x = (int) (Math.random() * 100); // Gets the position on x axis for element
         int placement_y = (int) (Math.random() * 100); // Gets the position on y axis for element
-        while (index > 26 || index < 0) {
+        while (index > 25 || index < 0) {
             index = (int) (Math.random() * 100);
         }
         while ((placement_x > 48 || placement_y > 23) || placement_x < 3 || placement_y < 3) {
